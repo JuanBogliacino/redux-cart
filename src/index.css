@@ -1,0 +1,155 @@
+* {
+    font-family: "Gill Sans", sans-serif;
+}
+
+body {
+    min-width: 350px;
+    padding: 0 100px;
+}
+
+.h2 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+}
+
+.table {
+    margin: auto;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.product {
+    min-width: 200px;
+}
+
+.img-container {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.img-container img {
+    border: 1px solid #bbb;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img-container:hover img {
+    transform: scale(1.1);
+}
+
+.not-cart-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-detail {
+    /* background-color: #ddd; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.img-container-detail {
+    border: 1px solid #bbb;
+    width: 500px;
+    height: 500px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.img-container-detail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.description {
+    width: 80%;
+    position: relative;
+    top: -10px;
+}
+
+.cart-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FilerBar */
+
+.filter-by-type span {
+    font-size: 20px;
+}
+
+.container-groups-type {
+    margin: 5px 0;
+    display: flex;
+    gap: 15px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.group-type {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.group-type button {
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px 6px;
+}
+
+.button-categoryActive {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.h2-category {
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .products-container {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .product-detail {
+        background-color: #e3e3e3;
+    }
+
+    .img-container-detail {
+        border: 1px solid #bbb;
+        width: 320px;
+        height: 320px;
+        margin: 10px 0;
+    }
+
+    .container-groups-type {
+        justify-content: center;
+    }
+}
