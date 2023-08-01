@@ -12,7 +12,7 @@ function App() {
   return (
     <>
      <div className="d-flex py-4">
-        <Link className="btn btn-primary mx-2 text-white" to="/redux-cart">Home</Link>
+        <Link className="btn btn-primary mx-2 text-white" to="/">Home</Link>
         <div className="ms-auto">
           <Link className="btn btn-primary position-relative" to="/cart">
             Cart
@@ -24,7 +24,7 @@ function App() {
       </div>
 
      <Routes>
-      <Route path='/redux-cart' element={<Home />} />
+      <Route path='/' element={<Home />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/product/:id' element={<ProductDetail />} />
      </Routes>

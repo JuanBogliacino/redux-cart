@@ -48,7 +48,7 @@ const ProductsList = ({ products }) => {
                       className={`btn ${productsList.find(pdt => pdt.id === product.id) ? "btn-danger" : "btn-success"}`}
                       onClick={() => handleAddOrRemoveProduct(product.id)}
                     >
-                      {productsList.find(pdt => pdt.id === product.id) ? "Remove" : "Add"} to Cart
+                      {productsList.find(pdt => pdt.id === product.id) ? "Remove from" : "Add to"} Cart
                     </button>
                   </div>
                 )
